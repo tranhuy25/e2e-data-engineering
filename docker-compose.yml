@@ -123,7 +123,7 @@ services:
       - ./script/entrypoint.sh:/opt/airflow/script/entrypoint.sh
       - ./requirements.txt:/opt/airflow/requirements.txt
     ports:
-      - "8080:8080"
+      - "8085:8080"
     healthcheck:
       test: ['CMD-SHELL', "[ -f /opt/airflow/airflow-webserver.pid ]"]
       interval: 30s
